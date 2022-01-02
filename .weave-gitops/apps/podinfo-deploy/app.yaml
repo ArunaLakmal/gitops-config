@@ -4,6 +4,7 @@ kind: Application
 metadata:
   labels:
     wego.weave.works/app-identifier: wego-33a9a3eeb5264448f632bdc7f51512f5
+    test: app
   name: podinfo-deploy
   namespace: wego-system
 spec:
