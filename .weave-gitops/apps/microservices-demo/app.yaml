@@ -1,0 +1,16 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-2f1aa0e664d61c72eb3c61bc04b13025
+  name: microservices-demo
+  namespace: wego-system
+spec:
+  branch: master
+  config_url: ssh://git@github.com/ArunaLakmal/gitops-config.git
+  deployment_type: helm
+  helm_target_namespace: sock-shop
+  path: ./deploy/kubernetes/helm-chart
+  source_type: git
+  url: ssh://git@github.com/ArunaLakmal/microservices-demo.git
